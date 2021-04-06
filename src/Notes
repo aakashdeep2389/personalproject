@@ -1,0 +1,237 @@
+typeof return the type of the value    ====================
+
+string methods =====================
+
+1   indexOf('locate')
+
+<script>
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate");
+document.getElementById("demo").innerHTML = pos;
+</script>
+
+ans - 7
+indexOf method take two prameter first is which string value we want to find and second is starting postion.
+
+2 search()
+
+search and indexOf r same but --
+
+They accept the same arguments (parameters), and return the same value?
+The two methods are NOT equal. These are the differences:
+ The search() method cannot take a second start position argument.
+ The indexOf() method cannot take powerful search values (regular expressions).
+
+Extracting String Parts...........
+
+
+3 The slice() Method
+
+slice() extracts a part of a string and returns the extracted part in a new string.
+The method takes 2 parameters: the start position, and the end position (end not included).
+
+4 The substring() Method
+
+substring() is similar to slice().
+The difference is that substring() cannot accept negative indexes.
+
+5 The substr() Method
+
+substr() is similar to slice().
+The difference is that the second parameter specifies the length of the extracted part.
+
+
+6 Replacing String Content
+The replace() method replaces a specified value with another value in a string:
+
+<script>
+function myFunction() {
+  var str = document.getElementById("demo").innerHTML; 
+  var txt = str.replace("Microsoft","W3Schools");
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+it replace 
+Please visit Microsoft!   ==== Please visit W3Schools!
+
+7 the split() method
+Converting a String to an Array
+A string can be converted to an array with the split() method:
+
+
+JavaScript Numbers ============================
+
+1 NaN - Not a Number
+
+isNaN() to find out if a value is a number
+
+2 The toString() Method
+
+The toString() method returns a number as a string.
+All number methods can be used on any type of numbers (literals, variables, or expressions):
+
+3 The Number() Method
+Number() can be used to convert JavaScript variables to numbers:
+
+number properties
+
+MAX_VALUE	Returns the largest number possible in JavaScript
+MIN_VALUE   Returns the smallest number possible in JavaScript
+
+
+Array Elements =======================
+
+Array Elements Can Be Objects
+JavaScript variables can be objects. Arrays are special kinds of objects.
+
+Because of this, you can have variables of different types in the same Array.
+
+You can have objects in an Array. You can have functions in an Array. You can have arrays in an Array:
+
+myArray[0] = Date.now;
+myArray[1] = myFunction;
+myArray[2] = myCars;
+
+============================================
+<script>
+var fruits, text, fLen, i;
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+fLen = fruits.length;
+
+text = "<ul>";
+for (i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+=============================================
+
+
+To recognize an array is an array
+Array.isArray()
+
+instanceof  
+
+
+Array Iteration ===========================
+
+1. Array.forEach()
+The forEach() method calls a function (a callback function) once for each array element.
+
+2. Array.map()
+The map() method creates a new array by performing a function on each array element.
+
+The map() method does not execute the function for array elements without values.
+
+The map() method does not change the original array.
+
+3. Array.filter()
+The filter() method creates a new array with array elements that passes a test.
+
+4 Array.reduce()
+The reduce() method runs a function on each array element to produce (reduce it to) a single value.
+
+The reduce() method works from left-to-right in the array. See also reduceRight().
+
+5 Array.every()
+The every() method check if all array values pass a test.
+
+6 Array.some()
+The some() method check if some array values pass a test.
+
+7. Array.indexOf()
+The indexOf() method searches an array for an element value and returns its position.
+
+8. Array.find()
+The find() method returns the value of the first array element that passes a test function.
+
+9. Array.findIndex()
+The findIndex() method returns the index of the first array element that passes a test function.'
+
+
+
+Date ==============
+
+new Date()
+new Date(year, month, day, hours, minutes, seconds, milliseconds)   =   var d = new Date(2018, 11, 24, 10, 33, 30, 0);
+new Date(milliseconds)  =  var d = new Date(100000000000);
+new Date(date string)  =    var d = new Date("October 13, 2014 11:13:00");
+
+1. The toDateString() 
+method converts a date to a more readable format:
+
+2. var d = new Date();
+
+
+
+Method	Description
+getFullYear()	Get the year as a four digit number (yyyy)
+getMonth()	Get the month as a number (0-11)
+getDate()	Get the day as a number (1-31)
+getHours()	Get the hour (0-23)
+getMinutes()	Get the minute (0-59)
+getSeconds()	Get the second (0-59)
+getMilliseconds()	Get the millisecond (0-999)
+getTime()	Get the time (milliseconds since January 1, 1970)
+getDay()	Get the weekday as a number (0-6)
+Date.now()	Get the time. ECMAScript 5.
+
+
+Method	Description
+setDate()	Set the day as a number (1-31)
+setFullYear()	Set the year (optionally month and day)
+setHours()	Set the hour (0-23)
+setMilliseconds()	Set the milliseconds (0-999)
+setMinutes()	Set the minutes (0-59)
+setMonth()	Set the month (0-11)
+setSeconds()	Set the seconds (0-59)
+setTime()	Set the time (milliseconds since January 1, 1970)
+
+
+JavaScript Math Object =======================
+
+
+Math.random()
+Math.random() returns a random number between 0 (inclusive),  and 1 (exclusive):
+
+Math.round()
+Math.round(x) returns the value of x rounded to its nearest integer:   =      Math.round(4.7);    // returns 5
+
+Math.pow()
+Math.pow(x, y) returns the value of x to the power of y:  =    Math.pow(8, 2);      // returns 64   
+
+Math.sqrt()
+Math.sqrt(x) returns the square root of x:  =   Math.sqrt(64);      // returns 8
+
+Math.abs()
+Math.abs(x) returns the absolute (positive) value of x:
+
+Math.ceil()
+Math.ceil(x) returns the value of x rounded up to its nearest integer:   =    Math.ceil(4.4);     // returns 5
+
+Math.floor()
+Math.floor(x) returns the value of x rounded down to its nearest integer:  =   Math.floor(4.7);    // returns 4
+
+
+Math.min() and Math.max()
+Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments:   ==    Math.min(0, 150, 30, 20, -8, -200);  // returns -200
+
+JavaScript Booleans = =======================
+
+
+Everything in Booleans is true except 
+
+The Boolean value of 0 (zero) is false:
+The Boolean value of -0 (minus zero) is false:
+The Boolean value of "" (empty string) is false:
+The Boolean value of undefined is false:
+The Boolean value of null is false:
+The Boolean value of false is (you guessed it) false:
+The Boolean value of NaN is false:
+
+
+
