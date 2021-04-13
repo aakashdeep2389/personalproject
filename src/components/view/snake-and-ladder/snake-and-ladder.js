@@ -52,7 +52,7 @@ const SnakeNstare = () => {
 
                     <h1 className="text-center player"> Player 1 </h1>
                     <h1 className="text-center"> {state.diceval} </h1>
-                    <button className="btn btn-success btn-block btn-dice" onClick={diceRun}>Roll Dice</button>
+                    <button className="btn btn-success btn-block btn-dice" onClick={diceRun}>Roll</button>
                 </div>
             </div>
 
